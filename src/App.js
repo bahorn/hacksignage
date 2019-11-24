@@ -5,6 +5,8 @@ import {
   Route,
 } from 'react-router-dom';
 
+import { Navigationbar } from './components/index';
+
 import {
   IndexPage,
   AdminPage,
@@ -17,6 +19,7 @@ function App() {
   return (
     <Router>
       <div>
+          <Navigationbar />
           <Switch>
             <Route exact path="/">
               <IndexPage />
